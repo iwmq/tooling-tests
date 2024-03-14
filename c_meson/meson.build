@@ -6,3 +6,8 @@ exe = executable('c_meson', 'c_meson.c',
   install : true)
 
 test('basic', exe)
+
+c_list_exe = executable('c_list', 'c_list.c',
+  install : true)
+
+test('basic', c_list_exe)
